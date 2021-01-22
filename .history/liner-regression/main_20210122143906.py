@@ -1,0 +1,19 @@
+import numpy as np
+import matplotlib
+import matplotlib.pyplot as plt
+
+# random data
+A = [2,5,7,9,11,16,19,23,22,29,29,35,37,40,46]
+b = [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+
+plt.plot(A,b,'ro')
+
+A = np.array([A]).T
+b = np.array([b]).T
+
+ones = np.ones((15,1), dtype=numpy.int8)
+
+A = np.concatennate((ones, A))
+print(A)
+
+plt.show()
